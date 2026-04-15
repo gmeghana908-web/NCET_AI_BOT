@@ -9,7 +9,7 @@ def load_summarizer():
 summarizer = load_summarizer()
 
 # Streamlit UI
-st.title("🤖 AI Text Summarizer")
+st.title("AI Text Summarizer")
 st.write("Enter a long text below, and get a concise summary!")
 
 #Text Input
@@ -26,4 +26,4 @@ if st.button("Summarize"):
         st.subheader("Summary:")
         st.success(summary[0]['summary_text'])
     else:
-        st.warning("⚠️ Please enter some text to summarize.")
+        st.warning("Please enter some text to summarize.")
